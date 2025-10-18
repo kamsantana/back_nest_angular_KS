@@ -2,12 +2,8 @@ import { Controller, Get, Post, Body, Patch, Param, Delete, UseGuards } from '@n
 import { UsersService } from './users.service';
 import { CreateUserDto } from './dto/create-user.dto';
 import { UpdateUserDto } from './dto/update-user.dto';
-<<<<<<< HEAD
 import { JwtAuthGuard } from '../auth/jwt-auth.guard';
 
-=======
-import { JwtAuthGuard }  from '../auth/jwt-auth.guard';
->>>>>>> 05d7e95f278df52d41d2f44427b0d5c03e1ff5c4
 @UseGuards(JwtAuthGuard)
 @Controller('users')
 export class UsersController {
@@ -18,10 +14,6 @@ export class UsersController {
     return this.usersService.create(createUserDto);
   }
 
-<<<<<<< HEAD
-=======
-  
->>>>>>> 05d7e95f278df52d41d2f44427b0d5c03e1ff5c4
   @Get()
   findAll() {
     return this.usersService.findAll();
